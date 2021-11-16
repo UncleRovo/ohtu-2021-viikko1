@@ -29,4 +29,4 @@ jobs:
       - name: Asenna pylint
         run: poetry add pylint --dev
       - name: Tee Pylint-kartoitus
-        run: pylint src
+        run: poetry pylint src
