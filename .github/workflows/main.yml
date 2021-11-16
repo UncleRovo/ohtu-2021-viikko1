@@ -26,5 +26,7 @@ jobs:
         run: poetry run coverage xml
       - name: Coverage report to Codecov
         run: bash <(curl -s https://codecov.io/bash)
+      - name: Asenna pylint
+        run: poetry add pylint --dev
       - name: Tee Pylint-kartoitus
         run: pylint src
