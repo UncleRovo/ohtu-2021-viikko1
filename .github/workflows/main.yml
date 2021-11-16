@@ -27,4 +27,4 @@ jobs:
       - name: Coverage report to Codecov
         run: bash <(curl -s https://codecov.io/bash)
       - name: Tee Pylint-kartoitus
-        run: poetry pylint src
+        run: pylint src
