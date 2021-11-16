@@ -66,7 +66,7 @@ class TestVarasto(unittest.TestCase):
        
     def test_virheinit_nollaa_kaiken(self):
         self.varasto = Varasto(-2)
-        self.assertEqual(self.varasto.tilavuus, 0.0)
+        self.assertEqual(self.varasto.tilavuus, 2)
         
     def test_virheinit_ja_vaara_alkusaldo(self):
         self.varasto = Varasto(10, -2)
